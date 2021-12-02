@@ -1,0 +1,24 @@
+
+mongoimport --db project2 --collection country .\mongodb_data\country.json --jsonArray
+mongoimport --db project2 --collection country_other_localname .\mongodb_data\country_other_localname.json --jsonArray
+mongoimport --db project2 --collection countrypopulations .\mongodb_data\countrypopulations.json --jsonArray
+mongoimport --db project2 --collection economy .\mongodb_data\economy.json --jsonArray
+mongoimport --db project2 --collection ethnicgroup .\mongodb_data\ethnicgroup.json --jsonArray
+mongoimport --db project2 --collection language .\mongodb_data\language.json --jsonArray
+mongoimport --db project2 --collection politics .\mongodb_data\politics.json --jsonArray
+mongoimport --db project2 --collection population .\mongodb_data\population.json --jsonArray
+mongoimport --db project2 --collection religion .\mongodb_data\religion.json --jsonArray
+mongoimport --db project2 --collection borders .\mongodb_data\borders.json --jsonArray
+mongoimport --db project2 --collection province .\mongodb_data\province.json --jsonArray
+mongoimport --db project2 --collection city .\mongodb_data\city.json --jsonArray
+mongoimport --db project2 --collection provincelocalname .\mongodb_data\provincelocalname.json --jsonArray
+mongoimport --db project2 --collection provinceothername .\mongodb_data\provinceothername.json --jsonArray
+mongoimport --db project2 --collection provincepopulation .\mongodb_data\provincepopulation.json --jsonArray
+mongoimport --db project2 --collection citylocalname .\mongodb_data\citylocalname.json --jsonArray
+mongoimport --db project2 --collection cityothername .\mongodb_data\cityothername.json --jsonArray
+mongoimport --db project2 --collection citypopulations .\mongodb_data\citypopulations.json --jsonArray
+mongoimport --db project2 --collection island .\mongodb_data\island.json --jsonArray
+mongoimport --db project2 --collection organization .\mongodb_data\organization.json --jsonArray
+mongoimport --db project2 --collection ismember .\mongodb_data\ismember.json --jsonArray
+mongoimport --db project2 --collection continent .\mongodb_data\continent.json --jsonArray
+mongoimport --db project2 --collection airport .\mongodb_data\airport.json --jsonArray

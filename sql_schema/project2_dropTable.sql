@@ -1,0 +1,24 @@
+drop table airport;
+drop table borders;
+
+drop table citylocalname;
+drop table cityothername;
+drop table citypopulations;
+drop table continent;
+drop table country_other_localname;
+drop table countrypopulations;
+drop table economy;
+drop table ethnicgroup;
+drop table island;
+drop table ismember;
+drop table language;
+drop table organization;
+drop table politics;
+drop table population;
+drop table provincelocalname;
+drop table provinceothername;
+drop table provincepopulation;
+drop table religion;
+drop table city;
+drop table province;
+drop table country;
