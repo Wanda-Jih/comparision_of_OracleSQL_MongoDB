@@ -94,7 +94,7 @@ def create_insert_data(file, DataDict, list_column, tableName):
     
 if __name__ == "__main__":
              
-    directory = "mongodb_data"
+    directory = "./mongodb_data"
     if not os.path.exists(directory):
         os.makedirs(directory)
   

@@ -3,7 +3,7 @@ import pandas as pd
 def readData(path):
 
     # Load the json into a DataFrame
-    df = pd.read_json(SourceFile)
+    df = pd.read_json(path)
     df = pd.json_normalize(df['results'])
     DataDict = df['items'][0]
     return DataDict
@@ -11,7 +11,7 @@ def readData(path):
 def create_commands(file, DataDict, list_string, tableName):
     for i in range(len(DataDict)):
         if tableName == 'country' and i < len(DataDict)-1 and list(DataDict[i+1].values())[0] == list(DataDict[i].values())[0]:
-            print(list(DataDict[i+1].values())[0])
+            # print(list(DataDict[i+1].values())[0])
             continue
    
             
@@ -165,7 +165,7 @@ if __name__ == "__main__":
         
         redundant_list = redundant_col(tableName)
         list_column = list(DataDict[0].keys())
-        print(redundant_list)
+        # print(redundant_list)
         for col in redundant_list:
             list_column.remove(col)
         list_string = ", ".join(list_column)
