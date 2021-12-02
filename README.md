@@ -95,7 +95,9 @@ Implement the following queries in both Oracle and MongoDB. For each of the foll
 Select the name of the country that shares the longest border with one or more other countries.
 
 •	Oracle: [query/oracle_query/ 5-1-a.sql](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/oracle_query/5-1-a.sql)
-•	MongoDB: [query/mongodb_query/mongodb_query.py](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/mongodb_query/mongodb_query.py)
+	
+•   MongoDB: [query/mongodb_query/mongodb_query.py](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/mongodb_query/mongodb_query.py)
+
 Executive Command:
 ```python query/mongodb_query/ mongodb_query.py 1```
 
@@ -104,7 +106,9 @@ Executive Command:
 For each country, list the city that has the maximum average population.
 
 •	Oracle: [query/oracle_query/ 5-1-b.sql](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/oracle_query/5-1-b.sql)
+
 •	MongoDB: [query/mongodb_query/mongodb_query.py](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/mongodb_query/mongodb_query.py)
+
 Executive Command:
 ```python query/mongodb_query/ mongodb_query.py 2```
 
@@ -112,7 +116,9 @@ Executive Command:
 List the following information of the countries where agriculture contributes the most to their economy. Name of the country, its GDP, percentage contribution from agriculture, and inflation.
 
 •	Oracle: [query/oracle_query/ 5-1-c.sql](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/oracle_query/5-1-c.sql)
+
 •	MongoDB: [query/mongodb_query/mongodb_query.py](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/mongodb_query/mongodb_query.py)
+
 Executive Command:
 ```python query/mongodb_query/ mongodb_query.py 3```
 
@@ -120,7 +126,9 @@ Executive Command:
 List the following information of the countries in the descending order of their ethnic diversity. Name of the country, number of ethnic groups, and the percentage of the major ethnicity. Ethnic diversity of a country increases as the number of ethnic groups that live in the country increases.
 
 •	Oracle: [query/oracle_query/ 5-1-d.sql](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/oracle_query/5-1-d.sql)
+
 •	MongoDB: [query/mongodb_query/mongodb_query.py](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/mongodb_query/mongodb_query.py)
+
 Executive Command:
 ```python query/mongodb_query/ mongodb_query.py 4```
 
@@ -128,7 +136,9 @@ Executive Command:
 Find the number of countries with the number of ethnic groups equal to the number of languages used.
 
 •	Oracle: [query/oracle_query/ 5-1-e.sql](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/oracle_query/5-1-e.sql)
+
 •	MongoDB: [query/mongodb_query/mongodb_query.py](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/mongodb_query/mongodb_query.py)
+
 Executive Command:
 ```python query/mongodb_query/ mongodb_query.py 5```
 
@@ -136,7 +146,9 @@ Executive Command:
 The GDP and IMR (infant mortality rate) together define the development of a country. Find the top 10 countries with the highest GDP (in decreasing order) and their corresponding IMR value.
 
 •	Oracle: [query/oracle_query/ 5-1-f.sql](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/oracle_query/5-1-f.sql)
+
 •	MongoDB: [query/mongodb_query/mongodb_query.py](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/mongodb_query/mongodb_query.py)
+
 Executive Command:
 ```python query/mongodb_query/ mongodb_query.py 6```
 
@@ -144,7 +156,9 @@ Executive Command:
 Find the following information of the country with the highest religious freedom. Name of the country, the religions that are practiced in the country. Note that the larger the number of religions practiced in a country, the higher its religious freedom is.
 
 •	Oracle: [query/oracle_query/ 5-1-g.sql](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/oracle_query/5-1-g.sql)
+
 •	MongoDB: [query/mongodb_query/mongodb_query.py](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/mongodb_query/mongodb_query.py)
+
 Executive Command:
 ```python query/mongodb_query/ mongodb_query.py 7```
 
@@ -152,7 +166,9 @@ Executive Command:
 What is the proportion of commonwealth countries in the top 100 countries in terms of GDP.
 
 •	Oracle: [query/oracle_query/ 5-1-h.sql](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/oracle_query/5-1-h.sql)
+
 •	MongoDB: [query/mongodb_query/mongodb_query.py](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/mongodb_query/mongodb_query.py)
+
 Executive Command:
 ```python query/mongodb_query/ mongodb_query.py 8```
 
@@ -160,7 +176,9 @@ Executive Command:
 Find the country with the largest population density in each continent. List the name of the country and its population density against the name of the continent. The population density of a country is the ratio between its total population and area.
 
 •	Oracle: [query/oracle_query/ 5-1-i.sql](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/oracle_query/5-1-i.sql)
+
 •	MongoDB: [query/mongodb_query/mongodb_query.py](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/mongodb_query/mongodb_query.py)
+
 Executive Command:
 ```python query/mongodb_query/ mongodb_query.py 9```
 
@@ -168,7 +186,9 @@ Executive Command:
 Find the names of countries and their capitals where the capital has more than one airport.
 
 •	Oracle: [query/oracle_query/ 5-1-j.sql](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/oracle_query/5-1-j.sql)
+
 •	MongoDB: [query/mongodb_query/mongodb_query.py](https://github.com/Wanda-Jih/comparision_of_OracleSQL_MongoDB/blob/main/query/mongodb_query/mongodb_query.py)
+
 Executive Command:
 ```python query/mongodb_query/ mongodb_query.py 10```
 
