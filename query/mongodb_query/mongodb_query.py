@@ -76,24 +76,49 @@ def question3(mydb):
     
     mycol = mydb['economy']    
 
-    mydoc= mycol.find( 
-        {"$and":
-              [ 
-                  {"$where" : "this.agriculture > this.service"},
-                  {"$where" : "this.agriculture > this.industry"},
-                  {"$where" : "this.agriculture > 0"} 
-              ]}
-        );
+    mydoc= mycol.aggregate( 
+    [
+        {
+          "$lookup":
+            {
+              "from": "country",
+              "localField": "country",
+              "foreignField": "code",
+              "as": "country"
+            }
+        }, 
+        {"$match" : {
+            "$and" : [
+                { "gdp": { "$ne": "" } },
+                { "agriculture": { "$ne": "" } },
+                { 
+                "$or" : [
+                    {"$expr" : {"$gt" : ["$agriculture" , 50]}},
+                    {"$and":[
+                        {"$expr" : {"$gt" : ["$agriculture" , "$industry"]}},
+                        {"$expr" : {"$gt" : ["$agriculture" , "$service"]}}
+                        ]
+                    }]
+                }] 
+            },
+        },           
+        { "$project": { 
+            "_id": 0, 
+            "name": "$country.name", 
+            "gdp": 1, 
+            "agriculture": 1,
+            "inflation" : 1
+            }
+        }
+     ]);
 
-
+    count = 0
     for x in mydoc:
-        result = []
-        result.append(x["country"]) 
-        result.append(x["gdp"]) 
-        result.append(x["agriculture"]) 
-        result.append(x["inflation"]) 
-        print(result)
+        count += 1
+        print(x)
       
+    print(count)
+
 def question4(mydb):
     
     mycol = mydb['ethnicgroup']    
@@ -370,6 +395,18 @@ def question10(mydb):
         print(x)
 
 
+def optimizedDB(db):
+    db['borders'].create_index([("country1", 1), ("country2", 1)])
+    db['city'].create_index([("population", 1)])
+    db['enconomy'].create_index([("gdp", 1),("agriculture", 1), ("industry", 1), ("service", 1)])
+    db['country'].create_index([("code", 1)])
+    db['ethnicgroup'].create_index([("country_code", 1)])
+    db['language'].create_index([("country", 1)])
+    db['ismember'].create_index([("country", 1 )])
+    db['continent'].create_index([("country_code", 1)])
+    db['airport'].create_index([("city", 1)])
+    
+    return db   
            
 if __name__ == '__main__':
     
@@ -383,6 +420,8 @@ if __name__ == '__main__':
     start_time = time.time()
     mydb = connectDB()      
 
+    mydb = optimizedDB(mydb)
+    
     if int(q) == 1:
         question1(mydb)
     elif int(q) == 2:
